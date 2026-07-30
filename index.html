@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anniversary ❤️</title>
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========================================= -->
+<!-- BACKGROUND EFFECT -->
+<!-- Tulip dan Heart akan dibuat oleh JS -->
+<!-- ========================================= -->
+
+<div id="tulip-container"></div>
+<div id="heart-container"></div>
+
+<!-- ========================================= -->
+<!-- LOGIN -->
+<!-- ========================================= -->
+
+<section id="loginPage">
+
+    <div class="login-card">
+
+        <h1>🌷</h1>
+
+        <h2>Happy Anniversary</h2>
+
+        <p>
+            Website ini dibuat khusus untuk seseorang
+            yang sangat berarti dalam hidupku.
+        </p>
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Masukkan Password">
+
+       <button onclick="checkPassword()"> Masuk ❤️
+       </button>
+
+        <p id="errorMessage"></p>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- HALAMAN UTAMA -->
+<!-- ========================================= -->
+
+<section id="mainPage">
+
+<!-- HEADER -->
+
+<header>
+
+<h1 class="title">
+Anniversary
+</h1>
+
+<p class="subtitle">
+
+Empat Bulan,
+Seratus Dua Puluh Tiga Hari,
+dan Ribuan Alasan
+Untuk Terus Memilih Orang Yang Sama.
+
+</p>
+
+</header>
+
+<!-- FOTO -->
+
+<section class="gallery-section">
+
+<h2>
+
+📸 Our Memories
+
+</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg" alt="Foto 1">
+
+<img src="foto2.jpg" alt="Foto 2">
+
+<img src="foto3.jpg" alt="Foto 3">
+
+</div>
+
+</section>
+
+<!-- INFORMASI -->
+
+<section class="information">
+
+<div class="card">
+
+<h3>
+
+💕 Nama Pengirim
+
+</h3>
+
+<p>
+
+Alfi
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+🤍 Nama Penerima
+
+</h3>
+
+<p>
+
+Mhura
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+📅 Tanggal Jadian
+
+</h3>
+
+<p>
+
+06 April 2026
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+⏳ Lama Bersama
+
+</h3>
+
+<p id="relationshipTime">
+
+123 Hari
+
+</p>
+
+</div>
+
+</section>
+
+<!-- LOVE LETTER -->
+
+<section class="letter-section">
+
+<h2>
+
+💌 Love Letter
+
+</h2>
+
+<div class="letter-card">
+
+<p id="typingText">
+
+Selamat anniversary yang keempat, sayang. 🤍
+
+Empat bulan. Seratus dua puluh tiga hari.
+
+Mungkin bagi sebagian orang itu hanyalah angka yang belum terlalu besar.
+
+Namun bagiku, setiap harinya menyimpan begitu banyak cerita, tawa, pelajaran, dan rasa syukur karena dipertemukan denganmu.
+
+Terima kasih karena telah membuat hari-hariku menjadi lebih berwarna.
+
+Terima kasih atas kesabaranmu, perhatianmu, candaanmu, dan kasih sayangmu yang selalu membuatku merasa dicintai.
+
+Bersamamu, aku belajar bahwa cinta yang tulus bukanlah tentang hubungan yang sempurna, melainkan tentang seseorang yang tetap memilih tinggal, mendengarkan, memahami, dan terus berjuang bersama.
+
+Terima kasih telah menjadi rumah yang selalu membuatku merasa aman.
+
+Tempatku pulang setelah hari yang melelahkan, dan tempat yang membuatku percaya bahwa hubungan yang sehat, tulus, dan saling mendewasakan benar-benar ada.
+
+Terima kasih telah memilihku selama seratus dua puluh tiga hari terakhir.
+
+Dan jika esok, lusa, tahun depan, atau puluhan tahun lagi aku masih diberi kesempatan untuk memilih,
+
+maka jawabanku akan tetap sama.
+
+Aku akan selalu memilihmu.
+
+With all my love,
+
+Alfi ❤️
+
+</p>
+
+</div>
+
+</section>
+<!-- ======================================================
+QUIZ
+====================================================== -->
+
+<section class="quiz-section">
+
+    <h2>💌 Quiz Tentang Kita 💌</h2>
+
+    <div id="quizContainer">
+
+        <!-- SOAL 1 -->
+        <div class="question">
+
+            <h3>1. Kapan kita jadian?</h3>
+
+            <button onclick="checkAnswer(this,true)">
+                6 April 2026
+            </button>
+
+            <button onclick="checkAnswer(this,false)">
+                6 Mei 2026
+            </button>
+
+            <button onclick="checkAnswer(this,false)">
+                7 April 2026
+            </button>
+
+        </div>
+
+        <!-- SOAL 2 -->
+        <div class="question">
+
+            <h3>2. Anniversary ini yang ke berapa?</h3>
+
+            <button onclick="checkAnswer(this,true)">
+                4 Bulan
+            </button>
+
+            <button onclick="checkAnswer(this,false)">
+                3 Bulan
+            </button>
+
+            <button onclick="checkAnswer(this,false)">
+                5 Bulan
+            </button>
+
+        </div>
+
+        <!-- SOAL 3 -->
+        <div class="question">
+
+            <h3>3. Siapa yang paling cantik?</h3>
+
+            <button onclick="checkAnswer(this,true)">
+                Calon istri Mhura ❤️
+            </button>
+
+            <button onclick="checkAnswer(this,true)">
+                Alfi ❤️
+            </button>
+
+            <button onclick="checkAnswer(this,false)">
+                Kucing 😆
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================================
+MUSIC
+====================================================== -->
+
+<section class="music-section">
+
+    <h2>🎵 Lagu Kita 🎵</h2>
+
+    <button onclick="playMusic()">
+        ▶ Putar Lagu
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source src="shapeofmyheart.mp3" type="audio/mpeg">
+    </audio>
+
+</section>
+
+<!-- ======================================================
+ENDING
+====================================================== -->
+
+<section class="ending-section">
+
+    <h2>
+        ❤️ Terima Kasih ❤️
+    </h2>
+
+    <p>
+
+        Empat bulan hanyalah awal dari perjalanan panjang kita.
+
+        Semoga setelah ini akan ada anniversary kelima,
+        keenam,
+        ketujuh,
+        hingga puluhan tahun lagi.
+
+        Semoga kita selalu dipertemukan dalam keadaan saling memilih,
+        saling menjaga,
+        saling menguatkan,
+        dan saling mencintai.
+
+    </p>
+
+    <h1>
+        I Love You,
+        Mhura 🤍
+    </h1>
+
+</section>
+
+<!-- ======================================================
+FOOTER
+====================================================== -->
+
+<footer>
+
+    Made with ❤️ by Alfi
+
+</footer>
+
+</section>
+  
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,777 @@
+/* ===========================================
+   GOOGLE FONT
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================================
+   BODY
+=========================================== */
+
+body{
+
+    background:linear-gradient(180deg,#fff7fa,#ffe4ec,#fff7fa);
+
+    color:#444;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================================
+   TULIP & HEART CONTAINER
+=========================================== */
+
+#tulip-container,
+#heart-container{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+/* ===========================================
+   LOGIN PAGE
+=========================================== */
+
+#loginPage{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+/* ===========================================
+   LOGIN CARD
+=========================================== */
+
+.login-card{
+
+    width:100%;
+    max-width:420px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+/* ===========================================
+   LOGIN TITLE
+=========================================== */
+
+.login-card h1{
+
+    font-size:55px;
+
+    margin-bottom:10px;
+
+}
+
+.login-card h2{
+
+    color:#ff4f88;
+
+    margin-bottom:20px;
+
+}
+
+.login-card p{
+
+    color:#777;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================================
+   INPUT PASSWORD
+=========================================== */
+
+.login-card input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:2px solid #ffd2df;
+
+    outline:none;
+
+    font-size:16px;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+
+}
+
+.login-card input:focus{
+
+    border-color:#ff4f88;
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+button{
+
+    background:#ff4f88;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ff2e73;
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================
+   ERROR MESSAGE
+=========================================== */
+
+#errorMessage{
+
+    margin-top:15px;
+
+    color:red;
+
+    font-weight:bold;
+
+}
+
+/* ===========================================
+   MAIN PAGE
+=========================================== */
+
+#mainPage{
+
+    display:none;
+
+    animation:fadeIn 1s;
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+header{
+
+    text-align:center;
+
+    padding:80px 20px 40px;
+
+}
+
+.title{
+
+    font-size:55px;
+
+    color:#ff4f88;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   FADE ANIMATION
+=========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+}
+/* ===========================================
+   GALLERY
+=========================================== */
+
+.gallery-section{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.gallery-section h2{
+
+    color:#ff4f88;
+
+    margin-bottom:30px;
+
+    font-size:32px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================
+   INFORMATION
+=========================================== */
+
+.information{
+
+    padding:60px 20px;
+
+}
+
+.information{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    color:#ff4f88;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.card p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   LOVE LETTER
+=========================================== */
+
+.letter-section{
+
+    padding:70px 20px;
+
+}
+
+.letter-section h2{
+
+    text-align:center;
+
+    color:#ff4f88;
+
+    margin-bottom:30px;
+
+    font-size:34px;
+
+}
+
+/* ===========================================
+   LETTER CARD
+=========================================== */
+
+.letter-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.letter-card p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#555;
+
+    text-align:justify;
+
+    white-space:pre-line;
+
+}
+
+/* ===========================================
+   TYPING TEXT
+=========================================== */
+
+#typingText{
+
+    min-height:250px;
+
+}
+
+/* ===========================================
+   SECTION SPACING
+=========================================== */
+
+section{
+
+    margin-bottom:40px;
+
+}
+/* ===========================================
+   QUIZ SECTION
+=========================================== */
+
+.quiz-section{
+
+    padding:70px 20px;
+
+    text-align:center;
+
+}
+
+.quiz-section h2{
+
+    color:#ff4f88;
+
+    margin-bottom:35px;
+
+    font-size:34px;
+
+}
+
+.question{
+
+    max-width:700px;
+
+    margin:35px auto;
+
+    background:#ffffff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.question h3{
+
+    margin-bottom:25px;
+
+    color:#444;
+
+}
+
+.question button{
+
+    display:block;
+
+    width:100%;
+
+    margin:12px auto;
+
+}
+
+/* ===========================================
+   MUSIC
+=========================================== */
+
+.music-section{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.music-section h2{
+
+    color:#ff4f88;
+
+    margin-bottom:25px;
+
+}
+
+.music-section button{
+
+    padding:15px 35px;
+
+}
+
+/* ===========================================
+   ENDING
+=========================================== */
+
+.ending-section{
+
+    padding:80px 25px;
+
+    text-align:center;
+
+}
+
+.ending-section h2{
+
+    color:#ff4f88;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.ending-section p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.ending-section h1{
+
+    margin-top:40px;
+
+    color:#ff4f88;
+
+    font-size:48px;
+
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+
+    margin-top:60px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    background:linear-gradient(90deg,#ff4f88,#ff86b3);
+
+}
+
+/* ===========================================
+   GLOW EFFECT
+=========================================== */
+
+.login-card,
+.card,
+.letter-card,
+.question{
+
+    transition:.4s;
+
+}
+
+.login-card:hover,
+.card:hover,
+.letter-card:hover,
+.question:hover{
+
+    box-shadow:
+    0 0 20px rgba(255,79,136,.35),
+    0 0 40px rgba(255,182,193,.4);
+
+}
+
+/* ===========================================
+   SCROLL BAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff7aa8;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ffe6ef;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:768px){
+
+.title{
+
+    font-size:40px;
+
+}
+
+.subtitle{
+
+    font-size:17px;
+
+}
+
+.gallery img{
+
+    height:250px;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+.letter-card{
+
+    padding:25px;
+
+}
+
+.letter-card p{
+
+    font-size:16px;
+
+}
+
+.question{
+
+    padding:25px;
+
+}
+
+.question button{
+
+    font-size:15px;
+
+}
+
+.ending-section h1{
+
+    font-size:34px;
+
+}
+
+}
+
+/* ===========================================
+   FLOAT ANIMATION
+=========================================== */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.gallery img{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* ===========================================
+   PINK GLOW TITLE
+=========================================== */
+
+.title{
+
+text-shadow:
+0 0 10px #ffb3cb,
+0 0 20px #ff7aa8,
+0 0 35px #ff4f88;
+
+}
